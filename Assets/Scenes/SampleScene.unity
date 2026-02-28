@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1652099}
   - component: {fileID: 1652098}
   - component: {fileID: 1652097}
+  - component: {fileID: 1652100}
   m_Layer: 5
   m_Name: Button_00
   m_TagString: Untagged
@@ -203,7 +204,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1652098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1652100}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1652098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -242,6 +267,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652095}
   m_CullTransparentMesh: 1
+--- !u!114 &1652100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 0
+  detailPanel: {fileID: 630114923}
 --- !u!1 &25618750
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +293,7 @@ GameObject:
   - component: {fileID: 25618754}
   - component: {fileID: 25618753}
   - component: {fileID: 25618752}
+  - component: {fileID: 25618755}
   m_Layer: 5
   m_Name: Button_14
   m_TagString: Untagged
@@ -323,7 +363,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 25618753}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 25618755}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &25618753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,7 +401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -362,6 +426,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25618750}
   m_CullTransparentMesh: 1
+--- !u!114 &25618755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25618750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 14
+  detailPanel: {fileID: 630114923}
 --- !u!1 &107993108
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 61180e9cc945f94449ff1d7dee17943c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f65e3dc2425de74e8727f1b17b15b25, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -653,6 +731,7 @@ GameObject:
   - component: {fileID: 202722017}
   - component: {fileID: 202722016}
   - component: {fileID: 202722015}
+  - component: {fileID: 202722018}
   m_Layer: 5
   m_Name: Button_05
   m_TagString: Untagged
@@ -722,7 +801,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 202722016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 202722018}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &202722016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,7 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -761,6 +864,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202722013}
   m_CullTransparentMesh: 1
+--- !u!114 &202722018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202722013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 5
+  detailPanel: {fileID: 630114923}
 --- !u!1 &238857947
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +890,7 @@ GameObject:
   - component: {fileID: 238857951}
   - component: {fileID: 238857950}
   - component: {fileID: 238857949}
+  - component: {fileID: 238857952}
   m_Layer: 5
   m_Name: Button_10
   m_TagString: Untagged
@@ -842,7 +960,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 238857950}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 238857952}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &238857950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,7 +998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -881,6 +1023,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238857947}
   m_CullTransparentMesh: 1
+--- !u!114 &238857952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238857947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 10
+  detailPanel: {fileID: 630114923}
 --- !u!1 &338173506
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +1049,7 @@ GameObject:
   - component: {fileID: 338173510}
   - component: {fileID: 338173509}
   - component: {fileID: 338173508}
+  - component: {fileID: 338173511}
   m_Layer: 5
   m_Name: Button_02
   m_TagString: Untagged
@@ -962,7 +1119,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 338173509}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 338173511}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &338173509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +1157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1001,6 +1182,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338173506}
   m_CullTransparentMesh: 1
+--- !u!114 &338173511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338173506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 2
+  detailPanel: {fileID: 630114923}
 --- !u!1 &338823841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,7 +1277,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 338823844}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToIngredients
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &338823844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,6 +1415,7 @@ GameObject:
   - component: {fileID: 392127035}
   - component: {fileID: 392127034}
   - component: {fileID: 392127033}
+  - component: {fileID: 392127036}
   m_Layer: 5
   m_Name: Button_09
   m_TagString: Untagged
@@ -1277,7 +1485,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 392127034}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 392127036}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &392127034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,7 +1523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1316,6 +1548,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 392127031}
   m_CullTransparentMesh: 1
+--- !u!114 &392127036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392127031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 9
+  detailPanel: {fileID: 630114923}
 --- !u!1 &407454929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,7 +1643,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 407454932}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToIngredients
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114923}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectDetailPanel, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &407454932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,7 +1721,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &409790812
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1877,6 +2147,7 @@ GameObject:
   - component: {fileID: 569904281}
   - component: {fileID: 569904280}
   - component: {fileID: 569904279}
+  - component: {fileID: 569904282}
   m_Layer: 5
   m_Name: Button_07
   m_TagString: Untagged
@@ -1946,7 +2217,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 569904280}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 569904282}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &569904280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,7 +2255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1985,6 +2280,162 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569904277}
   m_CullTransparentMesh: 1
+--- !u!114 &569904282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569904277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 7
+  detailPanel: {fileID: 630114923}
+--- !u!1 &630114919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630114920}
+  - component: {fileID: 630114921}
+  - component: {fileID: 630114922}
+  - component: {fileID: 630114923}
+  - component: {fileID: 630114924}
+  m_Layer: 0
+  m_Name: Scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630114920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630114919}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &630114921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630114919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34fcd7f1c3522a348975241c2d4bd82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPanel: {fileID: 409790811}
+  infoPanel: {fileID: 1806968690}
+  ingredientsPanel: {fileID: 164282766}
+  projectsPanel: {fileID: 1259978547}
+  burgerPanel: {fileID: 1541145535}
+  qrPanel: {fileID: 1810806835}
+--- !u!114 &630114922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630114919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3ddbe06167992d4bb70ddb61c1f22fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIds: 
+--- !u!114 &630114923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630114919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9de4dbf46f0cc4c824bd015f145500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectImage: {fileID: 514127420}
+  projectSprites:
+  - {fileID: 21300000, guid: 9ed144b8683db92448a1ffdeea8f1429, type: 3}
+  - {fileID: 21300000, guid: 196b67e968815994ca8e0cd3078facd7, type: 3}
+  - {fileID: 21300000, guid: d321818430ee8c449a30ca2c3cc0e46b, type: 3}
+  - {fileID: 21300000, guid: f1d555ceaaafd8c48a3ce90ca71dc04c, type: 3}
+  - {fileID: 21300000, guid: ee6769b6e5ac2614184601af34e9fc8f, type: 3}
+  - {fileID: 21300000, guid: 2f5760521eeb6ae469b2d9b279dbe638, type: 3}
+  - {fileID: 21300000, guid: 876e95bc65f8bc943ba81fc60d4d3048, type: 3}
+  - {fileID: 21300000, guid: 4cafca61e44908f40b68fd5c2de59057, type: 3}
+  - {fileID: 21300000, guid: 9bba456808f94d141aface725c0d1499, type: 3}
+  - {fileID: 21300000, guid: aca15b0fcd1e0934cbf7fe566fa0de39, type: 3}
+  - {fileID: 21300000, guid: 8c6b4d6813a504440aef40fed77d9a32, type: 3}
+  - {fileID: 21300000, guid: d2aef69aa65e80341b5d1f5e1f523cd2, type: 3}
+  - {fileID: 21300000, guid: d6c41b864791bd34a95f338cc1363178, type: 3}
+  - {fileID: 21300000, guid: a3dd71a7472c1844baebcea5df7fb895, type: 3}
+  - {fileID: 21300000, guid: 057587ba415822145a16dcad0faa484b, type: 3}
+  cart: {fileID: 630114922}
+  currentProjectIndex: -1
+--- !u!114 &630114924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630114919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea80bb453fde56b41ab6146221890aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectSlots:
+  - {fileID: 1323964568}
+  - {fileID: 1411889509}
+  - {fileID: 1460207576}
+  - {fileID: 425906635}
+  - {fileID: 1294780509}
+  - {fileID: 812300893}
+  - {fileID: 1806503980}
+  - {fileID: 124336566}
+  - {fileID: 378008791}
+  - {fileID: 439454853}
+  - {fileID: 924384445}
+  - {fileID: 1630913865}
+  - {fileID: 1963594752}
+  - {fileID: 664851766}
+  - {fileID: 185318924}
+  projectSprites:
+  - {fileID: 21300000, guid: 42d056207b90fc549aa4149cee473a14, type: 3}
+  - {fileID: 21300000, guid: ffe478b3aaea5224e9f4edcf8f3044dd, type: 3}
+  - {fileID: 21300000, guid: b4e11e2bc9bf6ed49a417f1bf558cfac, type: 3}
+  - {fileID: 21300000, guid: 62794a81b498d5e4bab19db661239a4d, type: 3}
+  - {fileID: 21300000, guid: 47f7dc164f46ba843b1bfe4b3b097ab2, type: 3}
+  - {fileID: 21300000, guid: e15122b3369fcf54993b9843c784362f, type: 3}
+  - {fileID: 21300000, guid: d90791e9fcb00384daec6af2cb5bda8b, type: 3}
+  - {fileID: 21300000, guid: 2b0e22c41f0e2644a8c9259c386c9ac2, type: 3}
+  - {fileID: 21300000, guid: a41e4098b9465c74b9704b97a806eab3, type: 3}
+  - {fileID: 21300000, guid: 8f347fa5ed26a154388b1a53f2b0d9c6, type: 3}
+  - {fileID: 21300000, guid: abab462697151f945a34ca99e82f803c, type: 3}
+  - {fileID: 21300000, guid: 548fb8f17c994194abd55326011be9ee, type: 3}
+  - {fileID: 21300000, guid: 5bda161d863479d4ab9dc1efaa2ce1ec, type: 3}
+  - {fileID: 21300000, guid: e8b3616802952954cb10ff5b18d6f8c9, type: 3}
+  - {fileID: 21300000, guid: 8c9fb82f65346d9429d768c5e3711883, type: 3}
+  cart: {fileID: 630114922}
 --- !u!1 &664851766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +2592,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 755830727}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToQR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &755830727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,6 +2655,7 @@ GameObject:
   - component: {fileID: 772256451}
   - component: {fileID: 772256450}
   - component: {fileID: 772256449}
+  - component: {fileID: 772256452}
   m_Layer: 5
   m_Name: Button_12
   m_TagString: Untagged
@@ -2261,7 +2725,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 772256450}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 772256452}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &772256450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,7 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2300,6 +2788,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772256447}
   m_CullTransparentMesh: 1
+--- !u!114 &772256452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772256447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 12
+  detailPanel: {fileID: 630114923}
 --- !u!1 &812300893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2587,6 +3089,7 @@ GameObject:
   - component: {fileID: 944074744}
   - component: {fileID: 944074743}
   - component: {fileID: 944074742}
+  - component: {fileID: 944074745}
   m_Layer: 5
   m_Name: Button_11
   m_TagString: Untagged
@@ -2656,7 +3159,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 944074743}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 944074745}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &944074743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2670,7 +3197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2695,6 +3222,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944074740}
   m_CullTransparentMesh: 1
+--- !u!114 &944074745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944074740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 11
+  detailPanel: {fileID: 630114923}
 --- !u!1 &984003652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,7 +3317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 984003655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToInfo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &984003655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3092,7 +3645,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1208029862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToIngredients
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114923}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectDetailPanel, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1208029862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3407,6 +3984,7 @@ GameObject:
   - component: {fileID: 1371039309}
   - component: {fileID: 1371039308}
   - component: {fileID: 1371039307}
+  - component: {fileID: 1371039310}
   m_Layer: 5
   m_Name: Button_08
   m_TagString: Untagged
@@ -3476,7 +4054,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1371039308}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1371039310}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1371039308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3490,7 +4092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3515,6 +4117,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371039305}
   m_CullTransparentMesh: 1
+--- !u!114 &1371039310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371039305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 8
+  detailPanel: {fileID: 630114923}
 --- !u!1 &1411889509
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +4505,7 @@ GameObject:
   - component: {fileID: 1545730705}
   - component: {fileID: 1545730704}
   - component: {fileID: 1545730703}
+  - component: {fileID: 1545730706}
   m_Layer: 5
   m_Name: Button_01
   m_TagString: Untagged
@@ -3958,7 +4575,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1545730704}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1545730706}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1545730704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3972,7 +4613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3997,6 +4638,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545730701}
   m_CullTransparentMesh: 1
+--- !u!114 &1545730706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545730701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 1
+  detailPanel: {fileID: 630114923}
 --- !u!1 &1622655526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4009,6 +4664,7 @@ GameObject:
   - component: {fileID: 1622655530}
   - component: {fileID: 1622655529}
   - component: {fileID: 1622655528}
+  - component: {fileID: 1622655531}
   m_Layer: 5
   m_Name: Button_06
   m_TagString: Untagged
@@ -4078,7 +4734,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1622655529}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1622655531}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1622655529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4092,7 +4772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4117,6 +4797,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622655526}
   m_CullTransparentMesh: 1
+--- !u!114 &1622655531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622655526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 6
+  detailPanel: {fileID: 630114923}
 --- !u!1 &1630913865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4279,6 +4973,7 @@ GameObject:
   - component: {fileID: 1743724376}
   - component: {fileID: 1743724375}
   - component: {fileID: 1743724374}
+  - component: {fileID: 1743724377}
   m_Layer: 5
   m_Name: Button_03
   m_TagString: Untagged
@@ -4348,7 +5043,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1743724375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1743724377}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1743724375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4362,7 +5081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4387,6 +5106,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743724372}
   m_CullTransparentMesh: 1
+--- !u!114 &1743724377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743724372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 3
+  detailPanel: {fileID: 630114923}
 --- !u!1 &1806503980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4618,7 +5351,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1889235297}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1889235297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4803,6 +5548,7 @@ GameObject:
   - component: {fileID: 1919561941}
   - component: {fileID: 1919561940}
   - component: {fileID: 1919561939}
+  - component: {fileID: 1919561942}
   m_Layer: 5
   m_Name: Button_13
   m_TagString: Untagged
@@ -4872,7 +5618,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1919561940}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1919561942}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1919561940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4886,7 +5656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4911,6 +5681,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919561937}
   m_CullTransparentMesh: 1
+--- !u!114 &1919561942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919561937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 13
+  detailPanel: {fileID: 630114923}
 --- !u!1 &1929176905
 GameObject:
   m_ObjectHideFlags: 0
@@ -5073,6 +5857,7 @@ GameObject:
   - component: {fileID: 2102844544}
   - component: {fileID: 2102844543}
   - component: {fileID: 2102844542}
+  - component: {fileID: 2102844545}
   m_Layer: 5
   m_Name: Button_04
   m_TagString: Untagged
@@ -5142,7 +5927,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2102844543}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2102844545}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.ProjectButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToProjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2102844543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5156,7 +5965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5181,6 +5990,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102844540}
   m_CullTransparentMesh: 1
+--- !u!114 &2102844545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102844540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c99c043785a89374cb36666ef787a1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectIndex: 4
+  detailPanel: {fileID: 630114923}
 --- !u!1 &2142045961
 GameObject:
   m_ObjectHideFlags: 0
@@ -5262,7 +6085,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2142045964}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 630114921}
+        m_TargetAssemblyTypeName: dev.xrlab.byos.ui.UIManager, Assembly-CSharp
+        m_MethodName: GoToBurger
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 630114924}
+        m_TargetAssemblyTypeName: dev.xrlab.BurgerViewController, Assembly-CSharp
+        m_MethodName: RefreshBurgerView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2142045964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,3 +6155,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1468412672}
   - {fileID: 1459065477}
+  - {fileID: 630114920}
