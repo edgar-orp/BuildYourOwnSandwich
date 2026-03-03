@@ -1,25 +1,29 @@
 namespace dev.xrlab.byos.ui
 {
     using UnityEngine;
+    using UnityEngine.SceneManagement;
 
     public class UIManager : MonoBehaviour
     {
-        [Header("Panels")]
+        [Header("Main Panels")]
         [SerializeField] private GameObject startPanel;
         [SerializeField] private GameObject infoPanel;
         [SerializeField] private GameObject ingredientsPanel;
-        [SerializeField] private GameObject projectsPanel;
         [SerializeField] private GameObject burgerPanel;
         [SerializeField] private GameObject qrPanel;
+
+        [Header("Overlay Panels")]
+        [SerializeField] private GameObject projectsPanel; // Overlay
 
         private GameObject currentPanel;
 
         private void Start()
         {
             Show(startPanel);
+            projectsPanel.SetActive(false); // aseguramos que el overlay inicie apagado
         }
 
-        // ---------- Navigation ----------
+        // ---------- Main Navigation ----------
 
         public void GoToInfo()
         {
@@ -29,11 +33,6 @@ namespace dev.xrlab.byos.ui
         public void GoToIngredients()
         {
             Show(ingredientsPanel);
-        }
-
-        public void GoToProjects()
-        {
-            Show(projectsPanel);
         }
 
         public void GoToBurger()
@@ -48,14 +47,26 @@ namespace dev.xrlab.byos.ui
 
         public void GoToStart()
         {
-            Show(startPanel);
+            SceneManager.LoadScene(0);
+        }
+
+        // ---------- Overlay Control (Projects) ----------
+
+        public void OpenProjects()
+        {
+            projectsPanel.SetActive(true);
+        }
+
+        public void CloseProjects()
+        {
+            projectsPanel.SetActive(false);
         }
 
         // ---------- Internal ----------
 
         private void Show(GameObject panel)
         {
-            if (currentPanel != null)
+            if (currentPanel != null && currentPanel != panel)
                 currentPanel.SetActive(false);
 
             currentPanel = panel;
