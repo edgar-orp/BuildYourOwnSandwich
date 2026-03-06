@@ -12,6 +12,9 @@ namespace dev.xrlab.byos.ui
         [SerializeField] private Sprite[] projectSprites;
         [SerializeField] private TMP_Text projectsCounterText;
 
+        [Header("Special Video")]
+        [SerializeField] private GameObject project4Video;
+
         [Header("References")]
         [SerializeField] private Cart cart;
 
@@ -20,12 +23,18 @@ namespace dev.xrlab.byos.ui
         public void Open(int projectIndex)
         {
             currentProjectIndex = projectIndex;
+
             projectImage.sprite = projectSprites[projectIndex];
+
+            HandleSpecialVideo(projectIndex);
         }
 
         public void Close()
         {
             currentProjectIndex = -1;
+
+            if (project4Video != null)
+                project4Video.SetActive(false);
         }
 
         public void Buy()
@@ -43,6 +52,14 @@ namespace dev.xrlab.byos.ui
         {
             int count = cart.GetProjects().Count;
             projectsCounterText.text = count.ToString();
+        }
+
+        private void HandleSpecialVideo(int projectIndex)
+        {
+            if (project4Video == null)
+                return;
+
+            project4Video.SetActive(projectIndex == 4);
         }
     }
 }
